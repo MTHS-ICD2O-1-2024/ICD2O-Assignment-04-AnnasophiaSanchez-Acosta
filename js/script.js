@@ -1,7 +1,7 @@
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
-// Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created by: Mr. Coxall updated by Anna S.
+// Created on: May 2025
 // This file contains the JS functions for index.html
 
 "use strict"
@@ -33,13 +33,13 @@ function calculate() {
 
   if (document.getElementById("flavour-1").checked) {
     flavourChoice = "Apple"
-    flavourPrice = 0.70
+    flavourPrice = 0.7
   } else if (document.getElementById("flavour-2").checked) {
     flavourChoice = "Blueberry"
-    flavourPrice = 0.80
+    flavourPrice = 0.8
   } else if (document.getElementById("flavour-3").checked) {
     flavourChoice = "Pecan"
-    flavourPrice = 0.50
+    flavourPrice = 0.5
   }
 
   // totals
@@ -50,7 +50,13 @@ function calculate() {
   // output
   if (pieChoice != "" && flavourChoice != "") {
     document.getElementById("results").innerHTML =
-      "<p>Subtotal: $" + subtotal + "<br>Tax: $" + tax + "<br>Total: $" + total + "</p>"
+      "<p>Subtotal: $" +
+      subtotal +
+      "<br>Tax: $" +
+      tax +
+      "<br>Total: $" +
+      total +
+      "</p>"
   } else {
     document.getElementById("results").innerHTML =
       "<p>Please select both the slices and flavour of pie(s), it has not be selected</p>"
